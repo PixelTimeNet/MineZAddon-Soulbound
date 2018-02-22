@@ -1,0 +1,41 @@
+name: rps
+version: 1.0.0
+authors: [7024w]
+main: minezaddon.main
+commands:
+  lore:
+    description: This sets the lore of item in hand.
+  il:
+    description: This sets the lore of item in hand.
+permissions:
+    lore.*:
+        description: Gives access to all lore commands
+        children:
+            lore.use: true
+            lore.add: true
+            lore.set: true
+            lore.remove: true
+            lore.clear: true
+            lore.name: true
+            lore.head: true
+    lore.use:
+        description: Allows you to use Lore command
+        default: op
+    lore.add:
+        description: Allows you to add lore to an item
+        default: op
+    lore.set:
+        description: Allows you to set lore of an item
+        default: op
+    lore.remove:
+        description: Allows you to remove lore of an item
+        default: op
+    lore.clear:
+        description: Allows you to clear lore of an item
+        default: op    
+    lore.name:
+        description: Allows you set name of an item
+        default: op
+    lore.head:
+        description: Allows you set owner of a skull
+        default: op
